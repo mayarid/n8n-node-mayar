@@ -1,0 +1,29 @@
+{
+  "name": "n8n-nodes-mayar",
+  "version": "0.1.0",
+  "description": "n8n community nodes for Mayar Headless API (actions & triggers)",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": ["dist/**/*"],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "n8n": {
+    "nodes": [
+      "dist/nodes/Mayar.node.js",
+      "dist/nodes/MayarTrigger.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/MayarApi.credentials.js"
+    ]
+  }
+}
