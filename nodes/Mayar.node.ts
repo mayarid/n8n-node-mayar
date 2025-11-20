@@ -11,7 +11,7 @@ export class Mayar implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Mayar',
     name: 'mayar',
-    icon: 'fa:link',
+    icon: 'file:mayar.svg',
     group: ['transform'],
     version: 1,
     subtitle: 'Actions untuk Mayar',

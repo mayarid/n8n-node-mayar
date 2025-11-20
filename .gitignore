@@ -12,3 +12,7 @@ pnpm-debug.log*
 *.log
 *.tsbuildinfo
 .eslintcache
+*.tgz
+.npmrc
+.vscode/
+.idea/
